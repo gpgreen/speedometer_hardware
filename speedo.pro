@@ -1,4 +1,4 @@
-update=Sun 01 Jul 2018 02:22:34 PM PDT
+update=Sun 08 Jul 2018 08:17:51 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,13 @@ LibName32=valves
 LibName33=stm32
 LibName34=sensors
 LibName35=../libraries/CustomComponents
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
