@@ -747,7 +747,7 @@ Text GLabel 7750 4000 2    60   Input ~ 0
 LCD-DC
 Text GLabel 7750 5350 2    60   Input ~ 0
 LCD-RST
-Text GLabel 8400 3250 2    60   Input ~ 0
+Text GLabel 8550 3250 2    60   Input ~ 0
 LCD-CS
 Text GLabel 7750 5250 2    60   Input ~ 0
 LCD-LED
@@ -755,11 +755,11 @@ Text GLabel 7750 3450 2    60   Input ~ 0
 MISO
 Text GLabel 7750 3900 2    60   Input ~ 0
 VMEAS
-Text GLabel 7750 5150 2    60   Input ~ 0
-HALL-EFF
-Text GLabel 7750 5050 2    60   Input ~ 0
-TACH
 Text GLabel 7750 4850 2    60   Input ~ 0
+HALL-EFF
+Text GLabel 7700 3050 2    60   Input ~ 0
+TACH
+Text GLabel 7750 4950 2    60   Input ~ 0
 BUTTON1
 $Comp
 L +3.3V #PWR027
@@ -970,23 +970,23 @@ RX
 $Comp
 L R R9
 U 1 1 5B3D0842
-P 8200 3100
-F 0 "R9" V 8280 3100 50  0000 C CNN
-F 1 "10K" V 8200 3100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8130 3100 50  0001 C CNN
-F 3 "" H 8200 3100 50  0001 C CNN
-	1    8200 3100
+P 8350 3100
+F 0 "R9" V 8430 3100 50  0000 C CNN
+F 1 "10K" V 8350 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8280 3100 50  0001 C CNN
+F 3 "" H 8350 3100 50  0001 C CNN
+	1    8350 3100
 	-1   0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR039
 U 1 1 5B3D0C7B
-P 8200 2950
-F 0 "#PWR039" H 8200 2800 50  0001 C CNN
-F 1 "+3.3V" H 8200 3090 50  0000 C CNN
-F 2 "" H 8200 2950 50  0001 C CNN
-F 3 "" H 8200 2950 50  0001 C CNN
-	1    8200 2950
+P 8350 2950
+F 0 "#PWR039" H 8350 2800 50  0001 C CNN
+F 1 "+3.3V" H 8350 3090 50  0000 C CNN
+F 2 "" H 8350 2950 50  0001 C CNN
+F 3 "" H 8350 2950 50  0001 C CNN
+	1    8350 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1085,7 +1085,7 @@ F 3 "" H 4350 1600 50  0001 C CNN
 $EndComp
 Text GLabel 4100 1200 0    60   Input ~ 0
 BUTTON2
-Text GLabel 7750 4950 2    60   Input ~ 0
+Text GLabel 7750 5050 2    60   Input ~ 0
 BUTTON2
 $Comp
 L ADuM1200BR U6
@@ -1354,7 +1354,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 3550 7750 3550
 Connection ~ 5000 3900
-Connection ~ 8200 3250
+Connection ~ 8350 3250
 Wire Wire Line
 	7500 4650 7650 4650
 Wire Wire Line
@@ -1363,8 +1363,6 @@ Wire Wire Line
 	7500 4750 7950 4750
 Wire Wire Line
 	8250 4750 8400 4750
-Wire Wire Line
-	7750 5150 7500 5150
 Wire Wire Line
 	7500 5250 7750 5250
 Wire Wire Line
@@ -1467,7 +1465,7 @@ Wire Wire Line
 Wire Wire Line
 	7500 4500 7750 4500
 Wire Wire Line
-	7500 3250 8400 3250
+	7500 3250 8550 3250
 Wire Wire Line
 	7500 5050 7750 5050
 Connection ~ 5600 2100
@@ -1490,10 +1488,14 @@ F 3 "" H 5400 2250 50  0001 C CNN
 	1    5400 2250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7500 3050
 NoConn ~ 7500 3150
 NoConn ~ 7500 4300
 NoConn ~ 7500 4400
 NoConn ~ 5600 4400
 NoConn ~ 5600 4500
+Wire Wire Line
+	7500 3050 7700 3050
+NoConn ~ 7500 5150
+Text Notes 8200 3500 0    60   ~ 0
+PB1 & PB2 unusable for analogWrite
 $EndSCHEMATC
