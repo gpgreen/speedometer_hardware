@@ -42,7 +42,7 @@ encoding utf-8
 Sheet 1 1
 Title "Speedo"
 Date ""
-Rev ""
+Rev "2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1056,17 +1056,6 @@ Wire Wire Line
 Connection ~ 4750 2750
 Wire Wire Line
 	4100 3100 4750 3100
-$Comp
-L Conn_02x03_Counter_Clockwise J3
-U 1 1 5B3C47E1
-P 4750 7250
-F 0 "J3" H 4800 7450 50  0000 C CNN
-F 1 "Prog Header" H 4800 7050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 4750 7250 50  0001 C CNN
-F 3 "" H 4750 7250 50  0001 C CNN
-	1    4750 7250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 7350 5050 7550
 $Comp
@@ -1452,4 +1441,15 @@ Wire Wire Line
 	7550 3250 7800 3250
 Text Notes 1150 2400 0    60   ~ 0
 LM35-POS is the signal pin\nLM35-NEG is the ground pin\nThe power pin on LM35 connected to 5V
+$Comp
+L Conn_02x03_Odd_Even J3
+U 1 1 5BB6DB85
+P 4750 7250
+F 0 "J3" H 4800 7450 50  0000 C CNN
+F 1 "ISP" H 4800 7050 50  0000 C CNN
+F 2 "" H 4750 7250 50  0001 C CNN
+F 3 "" H 4750 7250 50  0001 C CNN
+	1    4750 7250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
